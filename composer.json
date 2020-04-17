@@ -1,0 +1,45 @@
+{
+    "name": "capmega/base",
+    "type": "library",
+    "description": "Funciones basicas y auxiliares",
+    "keywords": ["laravel", "package", "base"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Camilo Rodriguez Cruz",
+            "email": "camilo@capmega.com",
+            "homepage": "https://capmega.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "capmega/blog": "*",
+        "spatie/laravel-permission": "^3.2",
+        "intervention/image": "^2.5",
+        "twilio/sdk": "^5.34",
+        "hybridauth/hybridauth" : "~3.0",
+        "maatwebsite/excel": "^3.1"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "files": [
+
+        ],
+        "psr-4": {
+            "Capmega\\Base\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Capmega\\Base\\BaseServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Capmega\\Base\\Facade"
+            }
+        }
+    }
+}
